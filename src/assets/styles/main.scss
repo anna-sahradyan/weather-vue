@@ -1,0 +1,10 @@
+@forward 'base/fonts';
+@forward 'base/variables';
+@forward 'base/mixins';
+@forward 'base/global'; // basic styling & container
+
+
+// Use normalize styles (instead of @import)
+@use 'normalize/variables' as *;
+@use 'normalize/vertical-rhythm' as *;
+@use 'normalize/normalize-mixin' as *;

@@ -1,0 +1,26 @@
+{
+  "name": "weather-vue",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "naive-ui": "^2.42.0",
+    "normalize": "^0.3.1",
+    "vue": "^3.5.17",
+    "vue3-select": "^0.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.15",
+    "@vitejs/plugin-vue": "^6.0.0",
+    "@vue/tsconfig": "^0.7.0",
+    "sass": "^1.89.2",
+    "typescript": "~5.8.3",
+    "vite": "^7.0.4",
+    "vue-tsc": "^2.2.12"
+  }
+}

@@ -1,0 +1,14 @@
+@mixin rowStyles {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+  gap: 0 86px;
+}
+
+@mixin spanStyles {
+  display: flex;
+  align-items: center;
+  gap: 0 8px;
+  text-align: center;
+  width: 210px;
+}

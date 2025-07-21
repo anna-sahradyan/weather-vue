@@ -1,0 +1,37 @@
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+}
+
+.inputField {
+  display: flex;
+  position: relative;
+
+}
+
+.inputWrapper {
+  width: 100%;
+  min-height: 80px;
+  border-radius: 10px;
+  background-color: var(--blue-100);
+  padding: 0 20px;
+
+}
+
+.btn {
+  position: absolute;
+  right: 10px;
+  top: 35%;
+  background: none;
+  cursor: pointer;
+  color:var(--grey-900);
+}
+
+.close {
+  position: absolute;
+  right: 30px;
+  top: 35%;
+  font-size: 20px;
+  color:var(--grey-900);
+}
