@@ -177,10 +177,10 @@ const shouldShowWeather = computed(() =>
 
 
     <ul v-if="showDropdown && search.trim() !== ''" style="border: 1px solid #ccc; margin-top: 4px; max-height: 200px; overflow-y: auto; border-radius:20px;background-color: var(--blue-100)">
-      <li v-if="loading" style="padding: 8px; text-align: center;">
+      <li v-if="loading"  style="padding: 8px; text-align: center;">
         <NSpin size="small" stroke="#6D758F" />
       </li>
-      <li v-for="city in options" :key="city.id" @click="handleSelect(city)" style="cursor:pointer;padding: 8px;">
+      <li v-for="city in options" :key="city.id" @click="handleSelect(city)" style="cursor:pointer;padding: 8px; color: #2E334A;">
         {{ city.name }}, {{ city.country }}
       </li>
       <li v-if="!loading && options.length === 0" style="padding: 8px; text-align: center;">

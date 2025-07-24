@@ -16,7 +16,8 @@
   border-radius: 10px;
   background-color: var(--blue-100);
   padding: 0 20px;
-
+  color:#2E334A;
+  font-size: 18px;
 }
 
 .btn {
@@ -25,7 +26,7 @@
   top: 35%;
   background: none;
   cursor: pointer;
-  color:var(--grey-900);
+  color: var(--grey-900);
 }
 
 .close {
@@ -33,5 +34,5 @@
   right: 30px;
   top: 35%;
   font-size: 20px;
-  color:var(--grey-900);
+  color: var(--grey-900);
 }
