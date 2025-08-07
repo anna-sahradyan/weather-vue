@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { defineProps } from 'vue';
 import style from '../components/forecast/forecast.module.scss';
-import {formatDate, formatDateTime} from "../utils/format.ts";
+
 const props = defineProps<{
   data: {
     current_weather: {
@@ -35,6 +35,18 @@ const getWeatherDescription = (code: number): string => {
   };
   return codes[code] || 'Unknown';
 };
+function formatDateTime(dateStr: string): string {
+  const date = new Date(dateStr);
+  return new Intl.DateTimeFormat('en-US', {
+    weekday: 'short',
+    month: 'short',
+    day: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: false,
+  }).format(date);
+}
+
 </script>
 
 <template>

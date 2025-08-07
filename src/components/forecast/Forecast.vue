@@ -18,6 +18,7 @@ function formatDate(dateStr: string): string {
   const date = new Date(dateStr);
   return new Intl.DateTimeFormat(navigator.language, { weekday: 'short', month: 'short', day: 'numeric' }).format(date);
 }
+
 </script>
 
 <template>
