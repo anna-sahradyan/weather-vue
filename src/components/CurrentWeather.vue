@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { defineProps } from 'vue';
 import style from '../components/forecast/forecast.module.scss';
+import {formatDate, formatDateTime} from "../utils/format.ts";
 const props = defineProps<{
   data: {
     current_weather: {
@@ -30,7 +31,7 @@ const getWeatherDescription = (code: number): string => {
     65: 'Heavy rain',
     80: 'Rain showers',
     95: 'Thunderstorm'
-    // добавь остальные по необходимости
+
   };
   return codes[code] || 'Unknown';
 };
@@ -43,6 +44,7 @@ const getWeatherDescription = (code: number): string => {
     <p :class="style.detailsItem"><strong>Windspeed:</strong> {{ props.data.current_weather.windspeed }} km/h</p>
     <p :class="style.detailsItem"><strong>Wind Direction:</strong> {{ props.data.current_weather.winddirection }}°</p>
     <p :class="style.detailsItem"><strong>Condition:</strong> {{ getWeatherDescription(props.data.current_weather.weathercode) }}</p>
-    <p :class="style.detailsItem"><strong>Time:</strong> {{ props.data.current_weather.time }}</p>
+    <p :class="style.detailsItem"><strong>Time:</strong> {{ formatDateTime(props.data.current_weather.time) }}</p>
+
   </div>
 </template>
