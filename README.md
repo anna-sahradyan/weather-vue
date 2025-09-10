@@ -1,6 +1,4 @@
 # 🌤️ Проект: Поиск города с погодой и автодополнением  Live Demo:
-
-https://fanciful-starship-65e259.netlify.app/
 Новый CI/CD деплой:
 https://golden-genie-c82bcb.netlify.app/
 
